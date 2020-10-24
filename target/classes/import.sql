@@ -1,0 +1,2 @@
+--insert into post_item (index_recipient, address_recipient, name_recipient, type) values (1,1,'коля',2);
+--insert into post_item (index_recipient, address_recipient, name_recipient, type) values (2,2,'тарик',3);
