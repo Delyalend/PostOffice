@@ -1,8 +1,7 @@
 package com.postalSystem.controller;
 
-import com.postalSystem.exception.PostOfficeAlreadyExists;
-import com.postalSystem.model.PostOffice;
-import com.postalSystem.repository.PostOfficeRepo;
+import com.postalSystem.dto.PostOfficeDto;
+import com.postalSystem.service.PostOfficeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -11,23 +10,17 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.validation.Valid;
-import java.util.Optional;
 
 @RestController
 public class PostOfficeController {
 
     @Autowired
-    private PostOfficeRepo postOfficeRepo;
+    private PostOfficeService officeService;
 
-    @PostMapping("/postOffices/")
+    @PostMapping(path = "registration/postOffices", produces = "application/json")
     @ResponseStatus(HttpStatus.CREATED)
-    public void registerPostOffice(@Valid @RequestBody PostOffice postOffice) {
-        Optional<PostOffice> postOfficeFromDb = postOfficeRepo.findByIndex(postOffice.getIndex());
-        if (!postOfficeFromDb.isPresent()) {
-            postOfficeRepo.save(postOffice);
-        } else {
-            throw new PostOfficeAlreadyExists();
-        }
+    public void registerPostOffice(@Valid @RequestBody PostOfficeDto officeDto) {
+        officeService.createPostOffice(officeDto);
     }
 
 }

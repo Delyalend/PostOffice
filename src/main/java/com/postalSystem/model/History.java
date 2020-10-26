@@ -1,18 +1,17 @@
 package com.postalSystem.model;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import lombok.*;
 
 import javax.persistence.*;
 import java.sql.Date;
 
 @Entity
-@Data
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
+@Getter
+@Setter
 public class History {
 
     @Id
@@ -25,5 +24,6 @@ public class History {
     private Date date;
 
     @ManyToOne(fetch = FetchType.LAZY)
+    @JsonBackReference
     private PostItem postItem;
 }

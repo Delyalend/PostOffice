@@ -1,23 +1,21 @@
 package com.postalSystem.model;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+import lombok.*;
 
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 
 @Entity
-@Data
+@Getter
+@Setter
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
 public class PostOffice {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int index;
 
     @Column(length = 250, nullable = false)
@@ -26,19 +24,8 @@ public class PostOffice {
     @Column(length = 250, nullable = false)
     private String name;
 
-    @OneToMany(mappedBy = "postOffice", cascade = CascadeType.ALL, orphanRemoval = true)
+    @OneToMany(mappedBy = "targetPostOffice", cascade = CascadeType.ALL, orphanRemoval = true)
+    @JsonManagedReference
     private List<PostItem> postItemList = new ArrayList<>();
-
-    public void addPostItem(PostItem postItem) {
-        this.postItemList.add(postItem);
-        postItem.setPostOffice(this);
-    }
-
-    public void removePostItem(PostItem postItem) {
-        this.postItemList.remove(postItem);
-        postItem.setPostOffice(null);
-    }
-
-
 
 }

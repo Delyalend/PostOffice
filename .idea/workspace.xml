@@ -1,7 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9b4b9731-837b-44ac-addd-60d472e0a0eb" name="Default Changelist" comment="" />
+    <list default="true" id="9b4b9731-837b-44ac-addd-60d472e0a0eb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/postalSystem/controller/StatusController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/postalSystem/dto/PostItemDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/postalSystem/dto/PostOfficeDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/postalSystem/exception/IncorrectIndexPostOfficeException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/postalSystem/exception/UnavailableActionAtCurrentStatusException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/postalSystem/service/HistoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/postalSystem/service/HistoryServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/postalSystem/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/postalSystem/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/postalSystem/controller/HistoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/postalSystem/controller/HistoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/postalSystem/controller/PostItemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/postalSystem/controller/PostItemController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/postalSystem/controller/PostOfficeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/postalSystem/controller/PostOfficeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/postalSystem/exception/PostItemNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/postalSystem/exception/NoSuchPostItemException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/postalSystem/exception/PostOfficeAlreadyExists.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/postalSystem/exception/PostOfficeAlreadyExists.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/postalSystem/exception/PostOfficeNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/postalSystem/exception/NoSuchPostOfficeException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/postalSystem/exception/RestExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/postalSystem/exception/RestExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/postalSystem/model/History.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/postalSystem/model/History.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/postalSystem/model/PostItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/postalSystem/model/PostItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/postalSystem/model/PostOffice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/postalSystem/model/PostOffice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/postalSystem/repository/HistoryRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/postalSystem/repository/HistoryRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/postalSystem/repository/PostItemRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/postalSystem/repository/PostItemRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/postalSystem/service/PostItemService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/postalSystem/service/PostItemService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/postalSystem/service/PostItemServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/postalSystem/service/PostItemServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/postalSystem/service/PostOfficeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/postalSystem/service/PostOfficeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/postalSystem/service/PostOfficeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/postalSystem/service/PostOfficeServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/import.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/postalSystem/service/PostItemServiceImplTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/com.postalSystem.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/postalSystem/Application.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/postalSystem/controller/HistoryController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/postalSystem/controller/PostItemController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/postalSystem/controller/PostOfficeController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/postalSystem/exception/PostItemNotFoundException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/postalSystem/exception/PostOfficeAlreadyExists.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/postalSystem/exception/PostOfficeNotFoundException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/postalSystem/exception/RestExceptionHandler$Exception.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/postalSystem/exception/RestExceptionHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/postalSystem/model/History$HistoryBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/postalSystem/model/History.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/postalSystem/model/PostItem$PostItemBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/postalSystem/model/PostItem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/postalSystem/model/PostOffice$PostOfficeBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/postalSystem/model/PostOffice.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/postalSystem/model/StatusPostItem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/postalSystem/model/TypePostItem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/postalSystem/repository/HistoryRepo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/postalSystem/repository/PostItemRepo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/postalSystem/repository/PostOfficeRepo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/postalSystem/service/PostItemService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/postalSystem/service/PostItemServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/postalSystem/service/PostOfficeService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/postalSystem/service/PostOfficeServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/import.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/postalSystem/service/PostItemServiceImplTest.class" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,6 +76,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -33,13 +96,14 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../test_task_instagram" />
-    <property name="project.structure.last.edited" value="Problems" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../PostOffice-master" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2954023" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -49,8 +113,16 @@
       <recent name="" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.postalSystem.model" />
       <recent name="com.postalSystem.service" />
     </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn compile" />
+      <command value="mvn package" />
+      <command value="mvn clean" />
+    </option>
   </component>
   <component name="RunManager" selected="Application.Application">
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -115,62 +187,78 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="609" y="281" width="757" height="579" key="#com.intellij.ide.util.MemberChooser" timestamp="1603497164789">
+    <state x="521" y="226" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1603639465596">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="609" y="281" width="757" height="579" key="#com.intellij.ide.util.MemberChooser/0.0.1600.860@0.0.1600.860" timestamp="1603497164789" />
-    <state x="510" y="221" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1603453449290">
+    <state x="521" y="226" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1600.860@0.0.1600.860" timestamp="1603639465596" />
+    <state x="609" y="281" width="757" height="579" key="#com.intellij.ide.util.MemberChooser" timestamp="1603672754577">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="510" y="221" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1600.860@0.0.1600.860" timestamp="1603453449290" />
+    <state x="609" y="281" width="757" height="579" key="#com.intellij.ide.util.MemberChooser/0.0.1600.860@0.0.1600.860" timestamp="1603672754577" />
+    <state x="430" y="347" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1603675022885">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="430" y="347" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1600.860@0.0.1600.860" timestamp="1603675022885" />
+    <state x="329" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1603634296333">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="329" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1600.860@0.0.1600.860" timestamp="1603634296333" />
+    <state x="510" y="221" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1603670511794">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="510" y="221" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1600.860@0.0.1600.860" timestamp="1603670511794" />
     <state x="296" y="83" key="DBNavigator.ProjectSettingsDialog" timestamp="1603388862137">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="296" y="83" key="DBNavigator.ProjectSettingsDialog/0.0.1600.860@0.0.1600.860" timestamp="1603388862137" />
-    <state x="560" y="229" key="FileChooserDialogImpl" timestamp="1603449722436">
+    <state x="560" y="229" key="FileChooserDialogImpl" timestamp="1603701634180">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="560" y="229" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1603449722436" />
-    <state width="1080" height="209" key="GridCell.Tab.0.bottom" timestamp="1603536648996">
+    <state x="560" y="229" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1603701634180" />
+    <state width="1316" height="186" key="GridCell.Tab.0.bottom" timestamp="1603714956745">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1080" height="209" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1603536648996" />
-    <state width="1080" height="209" key="GridCell.Tab.0.center" timestamp="1603536648995">
+    <state width="1316" height="186" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1603714956745" />
+    <state width="1316" height="186" key="GridCell.Tab.0.center" timestamp="1603714956745">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1080" height="209" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1603536648995" />
-    <state width="1080" height="209" key="GridCell.Tab.0.left" timestamp="1603536648995">
+    <state width="1316" height="186" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1603714956745" />
+    <state width="1316" height="186" key="GridCell.Tab.0.left" timestamp="1603714956745">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1080" height="209" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1603536648995" />
-    <state width="1080" height="209" key="GridCell.Tab.0.right" timestamp="1603536648995">
+    <state width="1316" height="186" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1603714956745" />
+    <state width="1316" height="186" key="GridCell.Tab.0.right" timestamp="1603714956745">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1080" height="209" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1603536648995" />
-    <state width="1416" height="260" key="GridCell.Tab.1.bottom" timestamp="1603408056233">
+    <state width="1316" height="186" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1603714956745" />
+    <state width="1557" height="274" key="GridCell.Tab.1.bottom" timestamp="1603703870434">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1416" height="260" key="GridCell.Tab.1.bottom/0.0.1600.860@0.0.1600.860" timestamp="1603408056233" />
-    <state width="1416" height="260" key="GridCell.Tab.1.center" timestamp="1603408056233">
+    <state width="1557" height="274" key="GridCell.Tab.1.bottom/0.0.1600.860@0.0.1600.860" timestamp="1603703870434" />
+    <state width="1557" height="274" key="GridCell.Tab.1.center" timestamp="1603703870434">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1416" height="260" key="GridCell.Tab.1.center/0.0.1600.860@0.0.1600.860" timestamp="1603408056233" />
-    <state width="1416" height="260" key="GridCell.Tab.1.left" timestamp="1603408056233">
+    <state width="1557" height="274" key="GridCell.Tab.1.center/0.0.1600.860@0.0.1600.860" timestamp="1603703870434" />
+    <state width="1557" height="274" key="GridCell.Tab.1.left" timestamp="1603703870433">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1416" height="260" key="GridCell.Tab.1.left/0.0.1600.860@0.0.1600.860" timestamp="1603408056233" />
-    <state width="1416" height="260" key="GridCell.Tab.1.right" timestamp="1603408056233">
+    <state width="1557" height="274" key="GridCell.Tab.1.left/0.0.1600.860@0.0.1600.860" timestamp="1603703870433" />
+    <state width="1557" height="274" key="GridCell.Tab.1.right" timestamp="1603703870434">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1416" height="260" key="GridCell.Tab.1.right/0.0.1600.860@0.0.1600.860" timestamp="1603408056233" />
-    <state x="290" y="113" key="SettingsEditor" timestamp="1603496393910">
+    <state width="1557" height="274" key="GridCell.Tab.1.right/0.0.1600.860@0.0.1600.860" timestamp="1603703870434" />
+    <state x="380" y="166" key="IDE.errors.dialog" timestamp="1603657793702">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="290" y="113" key="SettingsEditor/0.0.1600.860@0.0.1600.860" timestamp="1603496393910" />
-    <state x="510" y="272" key="com.intellij.ide.util.TipDialog" timestamp="1603523898091">
+    <state x="380" y="166" key="IDE.errors.dialog/0.0.1600.860@0.0.1600.860" timestamp="1603657793702" />
+    <state x="290" y="11" key="SettingsEditor" timestamp="1603714234845">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="510" y="272" key="com.intellij.ide.util.TipDialog/0.0.1600.860@0.0.1600.860" timestamp="1603523898091" />
+    <state x="290" y="11" key="SettingsEditor/0.0.1600.860@0.0.1600.860" timestamp="1603714234845" />
+    <state x="510" y="272" key="com.intellij.ide.util.TipDialog" timestamp="1603709010178">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="510" y="272" key="com.intellij.ide.util.TipDialog/0.0.1600.860@0.0.1600.860" timestamp="1603709010178" />
     <state x="747" y="163" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1603428896665">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
@@ -179,6 +267,10 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="162" y="170" key="new project wizard/0.0.1600.860@0.0.1600.860" timestamp="1603408052932" />
+    <state x="456" y="195" width="672" height="677" key="run.anything.popup" timestamp="1603714956772">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="456" y="195" width="672" height="677" key="run.anything.popup/0.0.1600.860@0.0.1600.860" timestamp="1603714956772" />
     <state x="539" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1603476421329">
       <screen x="0" y="0" width="1600" height="860" />
     </state>

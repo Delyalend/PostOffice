@@ -1,23 +1,23 @@
 package com.postalSystem.model;
 
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+import lombok.*;
 
 import javax.persistence.*;
 import java.util.List;
 
 @Entity
-@Data
+@Getter
+@Setter
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
 public class PostItem {
 
     @Id
-    @GeneratedValue(strategy=GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
     @Column(nullable = false)
@@ -29,22 +29,24 @@ public class PostItem {
     private StatusPostItem status;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    private PostOffice postOffice;
+    @JsonBackReference
+    private PostOffice targetPostOffice;
 
-    @OneToMany(mappedBy = "postItem", cascade = CascadeType.ALL,orphanRemoval = true)
+    @OneToMany(mappedBy = "postItem", cascade = CascadeType.ALL, orphanRemoval = true)
+    @JsonManagedReference
     private List<History> histories;
 
-    public void addHistory(History history) {
-        this.histories.add(history);
-        history.setPostItem(this);
-    }
+    @Column(nullable = false)
+    private String nameRecipient;
 
-    public void removeHistory(History history) {
-        this.histories.remove(history);
-        history.setPostItem(null);
-    }
+    @Column(nullable = false)
+    private String addressRecipient;
 
+    @Column(nullable = true)
+    private int nextPostOfficeIndex;
 
+    @Column(nullable = true)
+    private int curPostOfficeIndex;
 
 }
 

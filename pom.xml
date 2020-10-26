@@ -6,6 +6,7 @@
     <groupId>postalSystem</groupId>
     <artifactId>com.postalSystem</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>war</packaging>
     <properties>
         <java.version>1.8</java.version>
     </properties>
@@ -15,7 +16,11 @@
         <version>2.2.2.RELEASE</version>
     </parent>
     <dependencies>
-
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-tomcat</artifactId>
+            <scope>provided</scope>
+        </dependency>
         <dependency>
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
@@ -39,8 +44,8 @@
             <artifactId>spring-boot-starter-test</artifactId>
         </dependency>
     </dependencies>
-
     <build>
+        <finalName>postalSystem</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>

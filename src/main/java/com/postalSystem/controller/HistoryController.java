@@ -1,9 +1,7 @@
 package com.postalSystem.controller;
 
 import com.postalSystem.model.History;
-import com.postalSystem.model.PostItem;
-import com.postalSystem.repository.HistoryRepo;
-import com.postalSystem.service.PostItemService;
+import com.postalSystem.service.HistoryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -16,17 +14,12 @@ import java.util.List;
 public class HistoryController {
 
     @Autowired
-    private HistoryRepo historyRepo;
-
-    @Autowired
-    private PostItemService postItemService;
+    private HistoryService historyService;
 
     @GetMapping("postItems/{postItemId}/histories")
     public @ResponseBody
     List<History> getHistories(@PathVariable Long postItemId) {
-        PostItem postItem = postItemService.findById(postItemId);
-        System.out.println("Я тут!");
-        return historyRepo.findByPostItem(postItem);
+        return historyService.getHistoriesByPostItemId(postItemId);
     }
 
 }
